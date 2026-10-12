@@ -2,7 +2,8 @@
 @import "tailwindcss";
 
 :root {
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: #e8dfda;
   background: #100a09;
   font-synthesis: none;
@@ -27,41 +28,55 @@ body {
   min-height: 100vh;
 }
 
+
 .app-root.light-theme {
-  background: #f4eee9;
-  color: #2a1b17;
+  background: #f5f2ee;
+  color: #30251f;
 }
 
 .app-root.light-theme [class*="bg-[#100a09]"],
 .app-root.light-theme [class*="bg-[#160e0c]"] {
-  background-color: #fffaf6 !important;
+  background-color: #fffdfa !important;
 }
 
 .app-root.light-theme [class*="bg-white/"] {
-  background-color: #ffffff !important;
+  background-color: #fffdfa !important;
 }
 
 .app-root.light-theme [class*="text-white"] {
-  color: #66534b !important;
+  color: #76685e !important;
 }
 
 .app-root.light-theme h1,
 .app-root.light-theme h2,
 .app-root.light-theme h3,
 .app-root.light-theme h4 {
-  color: #2a1b17;
+  color: #30251f;
 }
 
 .app-root.light-theme [class*="border-white/"] {
-  border-color: #e4d5cb !important;
+  border-color: #e5d9cf !important;
 }
 
 .app-root.light-theme input,
 .app-root.light-theme textarea,
 .app-root.light-theme select {
-  color: #2a1b17;
-  background-color: #fffaf6;
+  color: #30251f;
+  background-color: #fffdfa;
   border-color: #d8c5b8;
+}
+
+.app-root.light-theme input::placeholder,
+.app-root.light-theme textarea::placeholder {
+  color: #a39489;
+}
+
+.app-root.light-theme [class*="text-orange-"] {
+  color: #ad5918;
+}
+
+.app-root.light-theme [class*="border-orange-"] {
+  border-color: #dba16e;
 }
 
 .app-root,
@@ -69,6 +84,7 @@ body {
   transition-property: background-color, border-color, color;
   transition-duration: 200ms;
 }
+
 @keyframes toast-in {
   from {
     opacity: 0;
@@ -78,18 +94,6 @@ body {
   to {
     opacity: 1;
     transform: translateX(0) translateY(0);
-  }
-}
-
-@keyframes toast-in {
-  from {
-    opacity: 0;
-    transform: translateX(24px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
   }
 }
 
@@ -103,4 +107,49 @@ body {
     opacity: 0;
     transform: translateX(24px);
   }
+}
+.app-root.light-theme {
+  background-color: #f5f0e9 !important;
+  color: #30251f !important;
+}
+
+.app-root.light-theme aside,
+.app-root.light-theme nav {
+  color: #30251f;
+}
+
+.app-root.light-theme [class*="bg-[#100a09]"],
+.app-root.light-theme [class*="bg-[#160e0c]"],
+.app-root.light-theme [class*="bg-black"] {
+  background-color: #fffaf5 !important;
+}
+
+.app-root.light-theme [class*="border-white"] {
+  border-color: #e7d8ca !important;
+}
+
+.app-root.light-theme [class*="text-white"] {
+  color: #554239 !important;
+}
+
+.app-root.light-theme h1,
+.app-root.light-theme h2,
+.app-root.light-theme h3,
+.app-root.light-theme h4,
+.app-root.light-theme p,
+.app-root.light-theme label {
+  color: #49352b;
+}
+
+.app-root.light-theme input,
+.app-root.light-theme textarea,
+.app-root.light-theme select {
+  background-color: #fffaf5 !important;
+  color: #30251f !important;
+  border-color: #ddc8b6 !important;
+}
+
+.app-root.light-theme input::placeholder,
+.app-root.light-theme textarea::placeholder {
+  color: #9b8779 !important;
 }

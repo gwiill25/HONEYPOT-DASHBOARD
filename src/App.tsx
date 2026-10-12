@@ -115,8 +115,8 @@ const maxActivity = Math.max(
 >
       <div className="pointer-events-none fixed inset-0 z-0">
         <CRTWarp
-          color="#d4810a"
-          backgroundColor="#100a09"
+          color={isLightTheme ? '#edac77' : '#d4810a'}
+          backgroundColor={isLightTheme ? '#f5f0e9' : '#100a09'}
           speed={0.5}
           curvature={0.25}
           scanlineStrength={0.25}
